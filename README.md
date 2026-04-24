@@ -4,7 +4,7 @@ O projeto visa simular o mapeamento da memória física e virtual de um computad
 ## Fluxo do programa
 Dois processos rodam concorrentemente com o uso de threads. Quando um processo ocupa o processador ele requisita uma de suas páginas da memória virtual de forma aleatória. A MMU verifica se a página requisitada está presente na memória física (RAM), caso a página requisitada não esteja presente, a MMU põe a página na RAM e remove o processo do processador simulando um page fault. Caso a página requisitada esteja na RAM o processo roda normalmente imprimindo na tela que sua execução ocorreu normalmente.
 
-//inserir imagem do fluxo
+[/images/fluxoprograma.png]
 
 O algoritmo que seleciona onde a página será inserida é aleatório, portanto, tanto páginas vitímas quanto espaços livres são tratados da mesma forma.
 
