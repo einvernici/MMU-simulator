@@ -9,7 +9,7 @@ Dois processos rodam concorrentemente com o uso de threads. Quando um processo o
 O algoritmo que seleciona onde a página será inserida é aleatório, portanto, tanto páginas vitímas quanto espaços livres são tratados da mesma forma.
 
 ## Resultados
-Como as páginas são carregadas uma por vez e sua seleção pelos processos é realizada de forma aleatória a probabilidade de um page fault é alta. Podemos ver através do gráfico abaixo que o número de page misses cresce linearmente conforme aumentamos a execução do programa.
+Como as páginas são carregadas uma por vez e sua seleção pelos processos é realizada de forma aleatória a probabilidade de um page fault é alta. Podemos ver através do gráfico abaixo que o número de page misses cresce linearmente conforme aumentamos o tempo de execução do programa.
 
 ![Total de Page Misses](images/pagefaults.png)
 ![Média de Page Misses por execução](images/mediapagemiss.png)
